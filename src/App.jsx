@@ -47,7 +47,7 @@ const App = () => {
 
   
   return (
-    <div className=' bg-[#071108]  h-screen w-screen' >
+    <div className=' bg-[#071108]  h-full w-screen' >
 
       {!user ? <Login handleLogin={handleLogin}/>:" "}
       {user =="admin" ? <AdminDashboard/> : (user=="employee"?<EmployeeDashboard data ={loggedInUserData} />:null)}

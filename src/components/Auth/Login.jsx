@@ -13,11 +13,11 @@ const Login = ({ handleLogin }) => {
   return (
     <div className='h-screen w-screen flex justify-center items-center bg-[#071108] relative overflow-hidden'>
 
-      {/* Ambient glow blobs for depth */}
+      
       <div className='absolute top-[-10%] left-[-10%] w-96 h-96 bg-[#C01062]/20 blur-3xl'></div>
       <div className='absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-[#2196F3]/20 blur-3xl'></div>
 
-      {/* Gradient border wrapper */}
+      
       <div className='p-[2px] bg-gradient-to-br from-[#C01062] via-[#7B2FF7] to-[#2196F3] shadow-[0_0_40px_rgba(192,16,98,0.35)] relative z-10'>
         <div className='bg-[#071108] p-10 sm:p-12'>
 

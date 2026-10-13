@@ -3,12 +3,13 @@ import CreateTask from '../Others/CreateTask'
 import Header from '../Others/Header'
 import TasksGiven from '../Others/TasksGiven'
 
-const AdminDashboard = () => {
+const AdminDashboard = (props) => {
   return (
     <div>
-        <Header/>
+        <Header changeUser = {props.changeUser}/>
       <CreateTask/>
       <TasksGiven/>
+      
     </div>
   )
 }

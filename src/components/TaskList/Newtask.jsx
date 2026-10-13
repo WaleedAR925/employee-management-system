@@ -2,17 +2,17 @@ import React from 'react'
 
 const Newtask = ({data}) => {
   return (
-     <div className='h-full w-75 bg-gradient-to-br from-[#C01062] via-[#8a1470] to-[#3a1268]  flex-shrink-0 p-5 shadow-[0_8px_30px_rgba(192,16,98,0.35)] '>
+     <div className='h-full w-75 bg-white border border-[#E5E7EB]  flex-shrink-0 p-5 shadow-[0_1px_3px_rgba(0,0,0,0.06)] '>
         <div className='flex justify-between '>
-          <h3 className='bg-green-500 text-sm px-3 py-1 font-semibold rounded text-white'>{data.category}</h3>
-        <h4 className='text-white text-sm font-semibold '>{data.taskDate}</h4>
+          <h3 className='bg-[#6B7280]/10 text-[#6B7280] text-sm px-3 py-1 font-semibold rounded'>{data.category}</h3>
+        <h4 className='text-[#6B7280] text-sm font-semibold '>{data.taskDate}</h4>
         </div>
-        <div className='flex justify-center fle{x-col mt-5 gap-3  text-white'>
+        <div className='flex justify-center flex-col mt-5 gap-3  text-[#1A1A1A]'>
         <h2 className='text-2xl font-semibold'>{data.taskTitle}</h2>
-        <p className='text-sm font-normal'>{data.taskDescription}</p>
+        <p className='text-sm font-normal text-[#6B7280]'>{data.taskDescription}</p>
         </div>
         <div className='flex justify-center items-center mt-2'>
-            <button className='bg-gradient-to-r from-[#8a0e4d] to-[#4a2a80] hover:from-[#a01059] hover:to-[#5a34a0] transition-all duration-200 text-white font-bold px-7 py-2 text-sm shadow-[0_4px_20px_rgba(192,16,98,0.3)] hover:shadow-[0_4px_25px_rgba(192,16,98,0.5)] active:scale-[0.98] w-full'>Accept Task</button>
+            <button className='bg-[#1E3A5F] hover:bg-[#254a77] transition-all duration-200 text-white font-bold px-7 py-2 text-sm shadow-[0_2px_8px_rgba(30,58,95,0.25)] active:scale-[0.98] w-full'>Accept Task</button>
         </div>
        </div>
   )
